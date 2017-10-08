@@ -10,8 +10,9 @@ function createPost(){
   var commentsSection = commentsTemplate();
   var postElement = document.getElementById("post");
   postElement.innerHTML = blogSection;
+    document.getElementsByTagName("main")[0].innerHTML += pageTemplate();
   postElement.getElementsByTagName("footer")[0].innerHTML = commentsSection;
-  document.getElementsByTagName("main")[0].innerHTML += pageTemplate();
+  
 }
 
 function postComment(){
