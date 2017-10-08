@@ -11,7 +11,7 @@ function createPost(){
   var postElement = document.getElementById("post");
   postElement.innerHTML = blogSection;
   postElement.getElementsByTagName("footer")[0].innerHTML = commentsSection;
-    document.getElementsByTagName("main")[0].innerHTML += pageTemplate();
+  document.getElementsByTagName("main")[0].innerHTML += pageTemplate();
 }
 
 function postComment(){
