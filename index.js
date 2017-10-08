@@ -1,5 +1,5 @@
 function createPost(){
-  document.getElementsByTagName("main")[0].innerHTML += pageTemplate();
+
   var pageTemplate = _.template(document.getElementById("page-template").innerHTML);
   var postTemplate = _.template(document.getElementById("post-template").innerHTML);
   var commentsTemplate = _.template(document.getElementById('comments-template').innerHTML);
@@ -11,6 +11,7 @@ function createPost(){
   var postElement = document.getElementById("post");
   postElement.innerHTML = blogSection;
   postElement.getElementsByTagName("footer")[0].innerHTML = commentsSection;
+    document.getElementsByTagName("main")[0].innerHTML += pageTemplate();
 }
 
 function postComment(){
