@@ -5,7 +5,7 @@ function createPost(){
   var commentsTemplate = _.template(document.getElementById('comments-template').innerHTML);
   var postTitle = document.getElementById("postTitle").value;
   var postAuthor = document.getElementById('postAuthor').value;
-  var post = document.getElementById("postbody").value;
+  var post = document.getElementById("postBody").value;
   var blogSection = postTemplate({`title`: postTitle, `body`: post, `poster`: postAuthor});
   var commentsSection = commentsTemplate();
   var postElement = document.getElementById("post");
